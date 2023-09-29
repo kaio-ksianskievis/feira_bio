@@ -195,7 +195,7 @@ h1{
 }
 .amostra{
     width: 100%;
-    height: auto;
+    height: 70vw;
     display: flex;
     align-items:flex-start ;
     background-color:rgb(255, 255, 188);
@@ -330,4 +330,10 @@ h1{
 }
 .pink, .purple, .blue,.green:hover{
     cursor: pointer;
+}
+@media(min-width:500px){
+    .amostra{
+        width: 100%;
+        height: auto ;
+    }
 }
