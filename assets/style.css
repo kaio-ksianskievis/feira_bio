@@ -1,0 +1,333 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    background-color:#b6edaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    width: 100%;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 15px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.inicio{
+   background-color: transparent;
+   overflow-x: hidden;
+   width: 100%;
+   height: auto;
+   
+}
+.sobre{
+    background-color:transparent;
+    width: 100%;
+    height: auto;
+} 
+.produto{
+    background-color:transparent;
+    width: 100%;
+    height: auto;
+}
+.contato{
+    background-color:transparent;
+    width: 100%;
+    height: auto;
+}
+.nav_li{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    font-size: 25px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    margin-left: 36px;
+
+}
+.menu li:hover{
+    
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 3s ease-in;
+}
+h1{
+    font-family: Palatino;
+    margin-left: -10px;
+    
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+.mobile{
+    cursor: pointer ;
+    display: none;
+}
+.mobile div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background: #000;
+}
+@media(max-width:830px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav_li{
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        background-color: #b6edaa;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        text-size-adjust: 20px;
+        margin-left: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .mobile{
+        display: block;
+    }
+    a{
+        text-decoration: none;
+        color:#000;
+    }
+    .menu li{
+        font-size: 20px;
+    }
+    .nav_li.active{
+        transform: translateX(0);
+    }
+}
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+@media(max-width:420px){
+    .nav_li{
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        background-color: #b6edaa;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:start;
+    }
+    .nav_li li{
+        font-size: 15px;
+    }
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+}
+@media(max-width:450px){
+    .img{
+        padding-top: 50px;
+    }
+}
+
+.img{
+    width: 100%;
+}
+.img2{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    
+}
+.img3{
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+.img4{
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+@media(max-height:450px){
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+}
+.amostra{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:flex-start ;
+    background-color:rgb(255, 255, 188);
+}
+.img_bio{
+   width: 25vw;
+   height: auto;
+   margin: 5vw 5vw 5vw 10vw;
+   box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.25);
+   border-radius: 10px;
+}
+.pink, .purple, .blue,.green{
+    
+    width: 3vw;
+    height: 3vw;
+    border: 0.5px solid #000;
+    margin-left: 0px;
+
+}
+.bt1,.bt2{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 25vw;
+}
+.pink{
+    background-color: rgb(240, 80, 106);
+}
+.purple{
+    background-color: rgb(211, 136, 211);
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color:#b6edaa ;
+}
+.descrição h2{
+    font-size: 9vw;
+    margin: 3vw 0 0vw -6vw;
+    color: rgb(254, 151, 169);
+}
+.descrição .um, .dois{
+    font-size: 3vw;
+    margin: 0 0 0 -6vw;
+    color: #a6d19c;
+}
+.preco{
+    color: rgb(11, 107, 94);
+    font-size: 3vw;
+    margin: 0 0 0 -6vw;
+}
+.comprar{
+    margin-top: 33vw;
+    margin-left: -32vw;
+    width: 13vw;
+    height: 6vw;
+    font-size: 2vw;
+    background-color: #b6edaa ;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 0.5 solid rgb(11, 107, 94);
+}
+.comprar:hover{
+    background-color: rgb(254, 151, 169);
+    color: #fff;
+}
+@media(max-width:530px){
+    .img_bio{
+        width: 36.5vw;
+        height: auto;
+        margin: 7vw 5vw 5vw 10vw;
+    }
+    .pink, .purple, .blue,.green{
+    
+        width: 5vw;
+        height: 5vw;}
+    .descrição h2{
+        font-size: 11vw;
+        margin: 3vw 0 0vw -6vw;}
+    .descrição .um, .dois,.preco{
+        font-size: 5vw;
+        margin: 0 0 0 -6vw;
+        color: #a6d19c;
+    }
+    .comprar{
+        width: 25vw;
+        height: 8vw;
+        font-size: 4vw;
+        margin-top: 48vw;
+        margin-left: -40vw;
+    }
+    .bt1,.bt2{
+        margin-top: 35vw;
+        position: relative;
+        left:5vw ;
+    }
+    .preco{
+        font-size: 5vw;
+        margin: 0 0 0 -6vw;
+        color: rgb(11, 107, 94);
+    }
+}
+.corpo{
+    background-color: #a6d19c;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    flex-direction: column;
+}
+.corpo h1{
+    font-family:serif;
+    font-size: 5vw;
+    color: #000;
+    margin-left:18vw;
+}
+.negueba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.negueba img{
+    width: 35vw;
+    height: auto;
+    margin-right:-5vw;
+}
+.negueba h2{
+    font-size: 5vw;
+}
+.pink, .purple, .blue,.green:hover{
+    cursor: pointer;
+}
